@@ -1,46 +1,136 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 
-    <title>Studio by alexan0308</title>
-  </head>
+<body>
+<em> <h2> Аюпова А.А  </H2>
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Studio</h1>
-        <h2></h2>
-        <a href="https://github.com/alexan0308/studio" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
+<h2> Вариант-2 </h2>
+ </em>
+</body>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
-<a id="Страница-для-примера-совместной-разработки" class="anchor" href="#%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%B0-%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%B9-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Страница для примера совместной разработки</strong>
-</h1>
+  <canvas id="gusen" width="800" height="800">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
 
-<p>Здесь ниже нужно выставить свои разработки по вариантам</p>
+<script type="text/javascript">
+    var myCanvas = document.getElementById('gusen');
 
-<p> <a href="IvanovII/index.html">Вариант 0 Иванов И.И.</a> </p>
+     var cxt = myCanvas.getContext('2d');
+ // Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,200,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,300,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,400,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(500,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(400,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(300,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем левый глаз 
+     cxt.fillStyle = "#000000";
+     cxt.beginPath();
+     cxt.arc(580,185,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем правый глаз 
+     cxt.fillStyle="#000000";
+     cxt.beginPath();
+     cxt.arc(620,185,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем нос
+     cxt.strokeStyle = '#000000';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(597, 205);
+     cxt.quadraticCurveTo(600, 205, 607, 205);
+     cxt.stroke();
+// Рисуем рот
+     cxt.strokeStyle = '#FA8072';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(580, 220);
+     cxt.quadraticCurveTo(605, 240, 620, 220);
+     cxt.stroke();
+// Рисуем лев.усик
+     cxt.strokeStyle = '#000000';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(600,150);
+     
+     cxt.lineTo(640,100);
+     cxt.stroke();
 
-<p>Вильданов А.Н.</p>
-        </section>
-      </div>
-    </div>
 
-  
-  </body>
+cxt.strokeStyle = '#000000';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(600,150);
+     
+    cxt.lineTo(560,100);
+     cxt.stroke();
+
+// красим
+      cxt.fillStyle = '#000000';
+      cxt.fill();
+      cxt.lineWidth = 1;
+      cxt.strokeStyle = 'black';
+      cxt.stroke();
+
+
+  </script>
+ </head>
+ <body>
 </html>
